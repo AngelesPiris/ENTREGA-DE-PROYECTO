@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Yeseva+One&display=swap');
+/*
+font-family: "Yeseva One", serif;
+font-family: "Josefin Sans", sans-serif;
+*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+    display: flex;
+    align-items: center;
+    padding: 30px;
+    justify-content: center;
+    background-image: url('../media/croissants.png');
+    color: #f4f3e1;
+}
+
+body{
+    font-family: "Josefin Sans", sans-serif;
+    margin: 0 auto;
+    background-color: #4A2C2C;
+}
+
+img{
+    max-width: 100%;
+}
+
+main{
+    display: flex;
+    gap: 30px;
+    margin-bottom: 80px;
+}
+
+.productos h2{
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.listaproductos {
+    display: flex;
+    flex-wrap: wrap;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+}
+
+.card{
+    cursor: pointer;
+    width: 300px;
+    padding: 20px;
+    margin: auto;
+    margin-top: 50px;
+    text-align: center;
+    display: block;
+    justify-items: center;
+    text-decoration: none;
+    background-color: #f4f3e1;
+    border-radius: .6em;
+}
+
+
+
+.cardimg{
+    background: transparent;
+    margin-bottom: 15px;
+}
+
+.cardimg img{
+    height: 200px;
+    width: 200px;
+    object-fit: cover;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+.infoproducto{
+    display: flex;
+    justify-content: space-between;
+}
+
+.infoproducto h3{
+    font-size: 15px;
+}
+
+.infoproducto p{
+    font-size: 13px;
+}
+
+.txtproducto:hover{
+    color: #4A2C2C;
+}
+
+.precio{
+    display: flex;
+    margin: 10px;
+    margin-left: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.precio:hover{
+    color: #FF9205;
+    font-size: 130%;
+}
+
+.botonvolver {
+    width: 400px;
+    padding: 20px;
+    margin: auto;
+    margin-top: 50px;
+    text-align: center;
+    display: block;
+    justify-items: center;
+    text-decoration: none;
+    background-color: whitesmoke;
+    color: #4A2C2C;
+    border-radius: .6em;
+    transition: .1s ease;
+}
+
+.botonvolver:hover {
+    font-size: 120%;
+    background-color: #FF9205;
+    color: whitesmoke;
+}

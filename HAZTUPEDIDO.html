@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personalice su Pedido</title>
+    <link rel="stylesheet" href="css/formulario.css">
+</head>
+
+<body>
+    <main>
+        <section class="tomarpedido">
+            <h2>Personalice su pedido!</h2>
+            <form class="pedido" novalidate> 
+                <input type="text" name="nombre" id="nombre" placeholder="Escriba su nombre"> 
+                <input type="email" name="email" id="email" placeholder="Escriba su email">
+                <input type="number" name="edad" id="edad" placeholder="Ingrese su edad" required min="1" max="200"> 
+                <textarea name="pedido" id="pedido" rows="4" cols="50" placeholder="Escriba su pedido"></textarea>
+                <button type="submit" id="submit"><strong>ENVIAR</strong></button> 
+            </form>
+            
+            <div id="mensaje" class="mensaje">
+
+            </div>
+        </section>
+    </main>
+    <a href="index.html" class="botonvolver"><strong>ATRÁS</strong></a>
+    <script src="js/formulario2.js"></script>
+</body>
+</html>

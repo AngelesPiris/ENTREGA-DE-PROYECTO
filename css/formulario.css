@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Yeseva+One&display=swap');
+/*
+font-family: "Yeseva One", serif;
+font-family: "Josefin Sans", sans-serif;
+*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Josefin Sans", sans-serif;
+    background-image: url('../media/croissants.png');
+}
+
+.tomarpedido{
+    width: 400px;
+    background-color: #BC7C60;
+    padding: 30px;
+    margin: auto;
+    margin-top: 100px;
+    border-radius: 4px;
+    color: #4A2C2C;
+    text-align: center;
+    display: grid;
+    justify-items: center;
+    gap: 1.5em;
+}
+
+.tomarpedido h2 {
+    color: #4A2C2C;
+}
+
+.tomarpedido input,
+.tomarpedido textarea,
+.tomarpedido button {
+    margin: 2%;
+    width: 80%;
+    max-width: 500px;
+    outline: none;
+    border: none;
+    padding: 1em;
+    font: inherit;
+    border-radius: .6em;
+}
+
+.tomarpedido button {
+    background-color: #4A2C2C;
+    color: white;
+    transition: .1s ease;
+}
+
+.tomarpedido button:hover {
+    font-size: 120%;
+    background-color: #9A4D00;
+}
+
+.botonvolver {
+    width: 400px;
+    padding: 20px;
+    margin: auto;
+    margin-top: 50px;
+    text-align: center;
+    display: block;
+    justify-items: center;
+    text-decoration: none;
+    background-color: whitesmoke;
+    color: #4A2C2C;
+    border-radius: .6em;
+    transition: .1s ease;
+}
+
+.botonvolver:hover {
+    font-size: 120%;
+    background-color: #4A2C2C;
+    color: whitesmoke;
+}

@@ -1,0 +1,297 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Yeseva+One&display=swap');
+/*
+font-family: "Yeseva One", serif;
+font-family: "Josefin Sans", sans-serif;
+*/
+section[id]{
+    scroll-margin-top: 10vh;
+}
+html {
+    scroll-behavior: smooth;
+}
+
+/* HEADER */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+
+body{
+    font-family: "Josefin Sans", sans-serif;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.header{
+    font-family: "Yeseva One", serif;
+    background-color: #FF9205;
+    min-height: 90vh;
+    display: flex;
+    align-items: center;
+}
+
+.menu{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.menu .navbar li {
+    position: relative;
+    float: left;
+}
+
+.menu .navbar li a{
+    font-size: 15px;
+    padding: 20px;
+    color: white;
+    display: block;
+}
+
+.menu .navbar li a:hover{
+    color: #4A2C2C;
+}
+
+#menu {
+    display: none;
+}
+
+.menu-icono {
+    width: 25px;
+}
+
+.menu label {
+    cursor: pointer;
+    display: none;
+}
+
+.header-content {
+    text-align: center;
+    font-size: 25px;
+    color: #4A2C2C;
+}
+
+.shop-button {
+    color: antiquewhite;
+    display: inline-block;
+    padding: 4% 10%;
+    background-color: #4A2C2C;
+    transition: font-size 0.2s ease, color 0.2s ease;
+    border-radius: .6em;
+}
+
+.shop-button:hover {
+    font-size: 120%;
+    background-color: #9A4D00;
+}
+
+
+/* SOBRE VICKY */
+.historia {
+    background-image: url('../media/croissants.png');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 100px 0;
+}
+.historia-back{
+    padding: 3em 3em;
+    background-color: #BC7C60;
+    max-width: 90%;
+    text-align: justify;
+}
+
+.historia h2 {
+    font-size: 30px;
+    line-height: 90px;
+    color: #4A2C2C;
+    text-transform: uppercase;
+    padding: 0 9%;
+}
+
+.historia-parrafo p {
+    font-size: 16px;
+    color: #4A2C2C;
+    padding: 0 9%;
+    margin-bottom: 10px;
+}
+
+.historia-img {
+    display: flex;
+    padding: 1% 9%;
+    width: 100%;
+    height: 80%;
+}
+
+.historia-img img {
+    width: 0px;
+    flex-grow: 1;
+    object-fit: cover;
+    opacity: .8;
+    transition: .5s ease;
+}
+
+.historia-img img:hover {
+    width: 50%;
+    opacity: 1;
+}
+
+
+/* PRODUCTOS */
+.productos {
+    background-color: #4A2C2C;
+    padding: 6em 5%;
+    text-align: center;
+}
+
+.productos h2 {
+    font-size: 2em;
+    line-height: 1.5;
+    color: white;
+    text-transform: uppercase;
+    padding: 0 9%;
+    margin-bottom: 2em;
+}
+
+.productos p {
+    font-size: 1em;
+    color: white;
+    padding: 0 9%;
+    margin-bottom: 4em;
+}
+
+.productos-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2em;
+    justify-content: center;
+    margin-bottom: 5em;
+}
+
+.dulces,
+.salados,
+.cafeteria {
+    padding: 0 9%;
+    font-size: 20px;
+    color: whitesmoke;
+    flex: 1;
+}
+
+.productos a {
+    color: #4A2C2C;
+    padding: 11px 35px;
+    font-weight: 900;
+    background-color: white;
+    transition: font-size 0.2s ease, color 0.2s ease;
+    border-radius: .6em;
+}
+
+.productos a:hover {
+    font-size: 130%;
+    color: white;
+    background-color: #8c5c48;
+}
+
+/*SEDE IFRAME*/
+.sedes {
+    padding: 100px 5%;
+    text-align: center;
+}
+
+.sedes h2 {
+    font-size: 30px;
+    line-height: 90px;
+    padding: 0 9%;
+}
+
+.sedes p{
+    margin: 5%;
+}
+
+.sedes-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.sedes-content iframe {
+    margin: 5%;
+}
+
+
+/*FORMULARIO*/
+.formulario {
+    background-color: #FF9205;
+    padding: 100px 5%;
+    text-align: center;
+    display: grid;
+    justify-items: center;
+    gap: 1.5em;
+}
+
+.formulario h2 {
+    color: #4A2C2C;
+}
+
+.formulario input,
+.formulario textarea,
+.formulario button {
+    margin: 2%;
+    width: 80%;
+    max-width: 500px;
+    outline: none;
+    border: none;
+    padding: 1em;
+    font: inherit;
+    border-radius: .6em;
+}
+
+.formulario button {
+    background-color: #4A2C2C;
+    color: white;
+    transition: .1s ease;
+}
+
+.formulario button:hover {
+    font-size: 120%;
+    background-color: #9A4D00;
+}
+
+
+/*FOOTER*/
+footer {
+    background-color: #4A2C2C;
+    color: white;
+    padding: 3em 2em;
+    display: flex;
+    justify-content: space-between;
+}
+
+footer h3 {
+    font-size: 110%;
+    margin-bottom: 1em;
+}
+
+footer p {
+    display: block;
+    margin-bottom: 1em;
+}
+
+footer a {
+    color: white;
+    display: block;
+    margin-bottom: 1em;
+}
